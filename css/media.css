@@ -1,0 +1,131 @@
+.display-1 {
+	font-size: 4rem;
+}
+
+/* Navbar */
+.navbar-home {
+	height: 10%; 
+}
+
+#showinicio {/* identificador id */
+	height: 100%;/* altura de la portada de 80 y le doy un color gris*/
+	 
+	padding: 50px 0 20px 0;
+}
+
+.showinicio-row {
+    flex-wrap: wrap; 
+}
+
+.showinicio-row-titulo {
+    width: 100%;
+	padding-top:0;
+    padding-bottom: 20px;
+    text-align: center;/* ahorra e invierte ce centran */
+}
+
+/* nosotros */
+#nosotros {
+	padding: 50px 0;
+	text-align: center;/*alinia al centro */
+}
+
+#nosotros h2 {
+	padding-bottom: 30px;
+}
+
+.nosotros-row {
+	flex-wrap: wrap;
+}
+
+.nosotros-row-image img {
+	height: auto;
+	width: 100%;
+	padding-right: 10px;
+	padding-bottom: 30px;
+}
+#nosotros hr {
+	width: 100%;
+}
+ 
+/* fin nosotros */
+/* servicios */
+#servicios {
+	padding: 50px 0;
+	text-align: center;/* centro el texto */
+	
+
+
+}
+.servicios-row-box img {
+	width: 100%;/*  */
+	 /* imagen mas a la derecha */
+	 
+	  
+}
+ 
+
+#servicios h2 {
+	padding-bottom: 40px;
+	 
+	 
+	 
+
+}
+
+.servicios-row {
+	flex-wrap: wrap;/* se cambia las imagenes hacia abajo */
+	 
+}
+ 
+.servicios-row-box {
+	margin:50px;
+	background: #fff;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);/* sombreado */
+	width: 100%;
+} 
+
+/* fin servicios */
+
+/*  contacto*/
+#contacto {
+	padding: 50px 0;
+	text-align: center;
+}
+
+
+#contacto h2 {
+	padding: 30px;
+}
+
+.contacto-form {
+	width: 100%;
+}
+
+/*  */
+.footer-home {
+	height: 10%;/*  */
+}
+
+ 
+
+/* extra */
+#navbar a {
+	color: #000;/* color de los enlazes */
+   
+    /* moverlo mas al centro */
+    margin-left:0px;
+     
+}
+#navbar ul {
+	float: right;/* menu lo pasamos al lado derecho */
+	font-size: 14px;
+	list-style: none;/* le quito los puntos de la lista */
+    /* moverlo mas al centro */
+    margin-right:0px;
+}
+
+
+/* fin extra */
+
+/* fin inicio */

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');/* importar libreria de google fonts */
+
+*{
+    margin: 0;/* quitar las configuraciones que por defecto nos da el navegador */
+    padding: 0;/* todo se comprimira hacia la izquierda y arriba */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*estilos principales de mi hoja de estilo  */
+html, body{
+    font-family: 'popins', sans-serif;/*  tipologia que voy a estar usando*/
+}
+/* tamaños de las cabezeras preestablecidos estamos utilizando rem es la medida basada en la raiz del tamaño de la fuente del navegador*/
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+/* fin */
+
+/* grozor de la tipografia */
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+/* fin */
+
+/* grozor para el parrafo */
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.7em;/*espacio entre lineas  */
+}
+
+a {
+	text-decoration: none;/* quita la linea inferior de  los enlaces */
+}
+
+/* clases */
+
+.container {/* nos da margenes laterales */
+	margin: auto;
+	max-width: 1300px;/* ancho maximo */
+	overflow: auto;
+	padding: 0 20px;/* 0 arriba y abajo y 20 laterales */
+}
+
+.largo {
+	font-size: 1.25rem;
+}
+
+.display-1 {
+	font-size: 6rem;
+}
+/* formulario1 */
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;/* letra gruesa */
+	font-weight: bold;/*  esto le da estructura*/
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+
+.btn-dark {
+	background: #4d4d4d;
+	border: none;/*esto le da color  */
+	color: #fff;
+}
+
+.btn-dark:hover {
+	background: #fff;
+	border: 1px solid #4d4d4d;
+	color: #4d4d4d;
+}/* para que cuando pase el mouse lede efecto */
+
+form label {
+	display: inline-block;
+	margin-bottom: 6px;
+	font-weight: 300;
+}
+
+form .form-group {
+	margin-bottom: 16px;
+}
+
+form .form-control {/*  fin */
+	display: block;
+	width: 100%;
+	padding: 7px 12px;
+	line-height: 1.5;
+	background-color: #f8f9fa;
+	border: none;
+	border-radius: 4px;
+}
+
+/* navbar */
+#navbar {
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    /* mover el navbar mas al centro */
+    margin-left: 30px;/* el logo se corrio mas ala derecha */
+     
+}
+
+#navbar a {
+	color: #000;/* color de los enlazes */
+   
+    /* moverlo mas al centro */
+    margin-left:10px;
+     
+}
+
+#navbar .logo { 
+	float: left;/* el logo se va cargar a la izquierda */
+	padding-top: 15px;/* va a tener un espacio superior a 5 */
+}
+
+.logo{
+	color: #fff;
+	-webkit-text-stroke: 2px #000;/* tamaño y color de la palabra racional del logo */
+    height: 40px;
+	 
+  }    
+
+#navbar ul {
+	float: right;/* menu lo pasamos al lado derecho */
+	font-size: 14px;
+	list-style: none;/* le quito los puntos de la lista */
+    /* moverlo mas al centro */
+    margin-right:300px;
+}
+
+#navbar ul li {
+	float: left;/* pongo cada elemento de la lista nav-var uno al lado del otro */
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+    /* el navbar mas al centro */
+     
+
+
+
+
+}
+
+#navbar ul li a:hover,/* les damos un pequeño efecto al hover */
+#navbar ul li .current {/*  muestra una linea */
+	text-decoration: underline;
+} 
+
+/* vamos a dividir la portada 80% 10% el footer se complementan el 100 */
+/* Showinicio */
+
+#showinicio {/* identificador id */
+	height: 80vh;/* altura de la portada de 80 y le doy un color gris*/
+	background: #f8f9fa;
+	padding: 150px 0;
+}
+
+#showinicio h1 {
+	line-height: 1em;
+}
+
+.showinicio-row-image img {
+	height: 500px;
+}
+
+#showinicio .titulo-outline {
+	color: #fff;/* le doy color blanco */
+	-webkit-text-stroke: 3px #000;/* efecto */
+}
+
+.showinicio-row {
+	display: flex;/* separo nuestro titulo al lado izquierdo */
+}
+
+.showinicio-row-titulo {
+	padding-top: 70px;
+}
+
+.showinicio-row-image {
+	display: block;/* imagen centrada en el mismo bloque */
+	margin: 0 auto;
+}
+
+/* nosotros */
+#nosotros {
+	background: #f8f9fa;/* le cambia de color  gres*/
+	padding: 90px 0;/*deja un espacio superior arriba y abajo   */
+}
+
+#nosotros h2 {
+	padding-bottom: 50px;/* se para el texto nosotros de la fila */
+}
+
+.nosotros-row {
+	display: flex;/* separa el texto a la derecha */
+	 
+}
+
+.nosotros-row-image img {
+	height: 500px;
+	padding-right: 90px;
+}
+
+#nosotros hr {
+	width: 60%;/*ocupa un porcentaje de la pantalla  */
+	margin-bottom: 30px;
+}
+
+/* fin nosotros */
+
+/* servicios */
+#servicios {
+	padding: 90px 0;
+	background: #f8f9fa;
+}
+
+#servicios h2 {
+	padding-bottom: 50px;
+}
+
+.servicios-row {
+	display: flex;
+}
+
+.servicios-row-box {
+	margin: 50px;
+	background: #fff;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);/* sombreado */
+}
+
+.servicios-row-box img {
+	width: 100%;
+}
+
+.servicios-row-box p {
+	text-align: center;
+	padding: 20px;
+	margin-top: 0;
+	 
+}
+
+
+
+/* fin servicios */
+
+/*  inicio contacto*/
+#contacto {
+	padding: 90px 0;
+	background: #f8f9fa;
+}
+
+#contacto h2 {
+	padding: 50px;
+}
+
+.contacto-form {
+	background: #fff;
+	width: 50%;/*  */
+	margin: 20px auto;
+	padding: 70px 50px;
+	border-radius: 20px;/*  dandole borde */
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form h5 {
+	text-align: center;
+	padding-bottom: 40px;
+	font-weight: 900;
+}
+
+.contacto-form button {
+	width: 100%;
+}
+/* fin contacto */
+/* Footer */
+.footer-home {
+	height: 10vh;/*  */
+}
+
+ 
+#mainfooter {
+	background: #f8f9fa;
+	text-align: center;
+	padding: 30px;/* es la propiedad que nos permite generar espacio interno entre el borde y la caja admite hasta 4 valores  */
+} 
+
+
+
+
+
+
+/* fin inicio */
+
+ 
